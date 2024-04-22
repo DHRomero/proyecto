@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+body {
+    background-image:url(../imagenes/portadas/toneles2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/*header nav*/
+
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+.portada {
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
+   
+}
+
+.portada h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: oblique;
+    text-align: center;
+    color: beige;
+    align-content: center;    
+  
+}
+
+.portada p {
+    text-align: center;
+    padding: 15px;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 35px;
+    height: 140px;
+    width: 100%;
+    align-content: center;
+    
+    
+}
+
+/*vinos destacados*/
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 30px;
+    color: aliceblue;
+    background-color: rgba(143, 92, 45, 0.767);
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 30px;
+    color: aliceblue;
+    background-color: rgba(143, 92, 45, 0.767);
+    padding: 5px;
+    width: 300px;
+    
+
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-style: oblique;
+    font-weight: 900;
+    color: whitesmoke;
+    text-align: start;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: antiquewhite;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.vinos-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    align-items: center;
+}
+
+.producto img:hover{
+    filter: blur(0);
+    border-radius: 50px;
+    transition: 0.3s;
+    flex-grow: 8;
+    border: 2px solid whitesmoke;
+    
+
+
+}
+
+.producto:hover {
+    background-color: rgb(66, 20, 14);
+    color: white;
+    
+   
+}
+
+
+
+.producto {
+    background-color: rgba(240, 163, 148, 0.596);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    gap: 20px;
+    box-shadow: 5px 5px 5px whitesmoke
+}
+
+
+.descripcion{
+    gap: 15px;
+}
+
+.descripcion a{
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        color: antiquewhite;
+        
+}
+
+.descripcion p {
+    margin: 10px;
+    color: beige;
+    font-size: 16px;
+}
+
+
+
+/*Box para regalos*/
+
+
+
+
+.box {
+display: flex;
+flex-direction: column;
+width: 100%;
+gap: 20px;
+align-items: center;
+
+}
+
+.box-regalos {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding: 15px;
+    background-color:  rgba(155, 129, 124, 0.767);
+    border-radius: 15px;
+    box-shadow: 5px 5px whitesmoke;
+
+}
+
+.box-regalos img {
+    width: 40%;
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.box-items {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-items h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: rgba(95, 55, 18, 0.767);
+    font-weight: bolder;
+}
+
+
+.box-items p {
+    font-size: 1.8rem;
+    font-style: oblique;
+    text-align: center;
+    color: antiquewhite;
+    
+}
+
+.box-items a {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+/*pagina Nuestro Vinos*/
+
+.nuestrosvinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    margin: 20px;
+    padding: 15px;
+    gap: 20px;
+    
+}
+
+
+/*footer*/
+
